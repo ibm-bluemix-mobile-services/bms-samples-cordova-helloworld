@@ -1,0 +1,183 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"BMSClient\"><param name=\"android-package\" value=\"com.ibm.mobilefirstplatform.clientsdk.cordovaplugins.core.CDVBMSClient\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"MFPRequest\"><param name=\"android-package\" value=\"com.ibm.mobilefirstplatform.clientsdk.cordovaplugins.core.CDVMFPRequest\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"MFPLogger\"><param name=\"android-package\" value=\"com.ibm.mobilefirstplatform.clientsdk.cordovaplugins.core.CDVMFPLogger\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"MFPAnalytics\"><param name=\"android-package\" value=\"com.ibm.mobilefirstplatform.clientsdk.cordovaplugins.core.CDVMFPAnalytics\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"AuthorizationManager\"><param name=\"android-package\" value=\"com.ibm.mobilefirstplatform.clientsdk.cordovaplugins.core.CDVAuthorizationManager\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"AuthenticationContext\"><param name=\"android-package\" value=\"com.ibm.mobilefirstplatform.clientsdk.cordovaplugins.core.CDVAuthenticationContext\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"MFPPushPlugin\"><param name=\"android-package\" value=\"com.ibm.mobilefirstplatform.clientsdk.cordovaplugins.push.CDVMFPPush\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+                            "count": 2
+                        },
+                        {
+                            "xml": "<permission android:name=\"io.cordova.hellocordova.permission.C2D_MESSAGE\" android:protectionLevel=\"signature\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"io.cordova.hellocordova.permission.C2D_MESSAGE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"com.google.android.c2dm.permission.RECEIVE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WAKE_LOCK\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.USE_CREDENTIALS\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest/application/activity": [
+                        {
+                            "xml": "<intent-filter><action android:name=\"io.cordova.hellocordova.IBMPushNotification\" /><category android:name=\"android.intent.category.DEFAULT\" /></intent-filter>",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest/application": [
+                        {
+                            "xml": "<service android:name=\"com.ibm.mobilefirstplatform.clientsdk.android.push.api.MFPPushIntentService\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<receiver android:name=\"com.ibm.mobilefirstplatform.clientsdk.android.push.internal.MFPPushBroadcastReceiver\" android:permission=\"com.google.android.c2dm.permission.SEND\"><intent-filter><action android:name=\"com.google.android.c2dm.intent.RECEIVE\" /><category android:name=\"io.cordova.hellocordova\" /></intent-filter><intent-filter><action android:name=\"android.intent.action.BOOT_COMPLETED\" /><category android:name=\"io.cordova.hellocordova\" /></intent-filter></receiver>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-livereload": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "ibm-mfp-core": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "ibm-mfp-push": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/cordova-plugin-whitelist/whitelist.js",
+            "id": "cordova-plugin-whitelist.whitelist",
+            "pluginId": "cordova-plugin-whitelist",
+            "runs": true
+        },
+        {
+            "file": "plugins/ibm-mfp-core/www/BMSClient.js",
+            "id": "ibm-mfp-core.BMSClient",
+            "pluginId": "ibm-mfp-core",
+            "clobbers": [
+                "BMSClient"
+            ]
+        },
+        {
+            "file": "plugins/ibm-mfp-core/www/MFPRequest.js",
+            "id": "ibm-mfp-core.MFPRequest",
+            "pluginId": "ibm-mfp-core",
+            "clobbers": [
+                "MFPRequest"
+            ]
+        },
+        {
+            "file": "plugins/ibm-mfp-core/www/MFPLogger.js",
+            "id": "ibm-mfp-core.MFPLogger",
+            "pluginId": "ibm-mfp-core",
+            "clobbers": [
+                "MFPLogger"
+            ]
+        },
+        {
+            "file": "plugins/ibm-mfp-core/www/MFPAnalytics.js",
+            "id": "ibm-mfp-core.MFPAnalytics",
+            "pluginId": "ibm-mfp-core",
+            "clobbers": [
+                "MFPAnalytics"
+            ]
+        },
+        {
+            "file": "plugins/ibm-mfp-core/www/AuthorizationManager.js",
+            "id": "ibm-mfp-core.AuthorizationManager",
+            "pluginId": "ibm-mfp-core",
+            "clobbers": [
+                "AuthorizationManager"
+            ]
+        },
+        {
+            "file": "plugins/ibm-mfp-push/www/MFPPush.js",
+            "id": "ibm-mfp-push.MFPPush",
+            "pluginId": "ibm-mfp-push",
+            "clobbers": [
+                "MFPPush"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-livereload": "1.0.0-dev",
+        "cordova-plugin-whitelist": "1.2.0",
+        "ibm-mfp-core": "0.0.1",
+        "ibm-mfp-push": "0.0.1"
+    }
+}

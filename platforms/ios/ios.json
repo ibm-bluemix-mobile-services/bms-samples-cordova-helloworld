@@ -1,0 +1,115 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"BMSClient\"><param name=\"ios-package\" value=\"CDVBMSClient\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"MFPRequest\"><param name=\"ios-package\" value=\"CDVMFPRequest\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"MFPLogger\"><param name=\"ios-package\" value=\"CDVMFPLogger\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"MFPAnalytics\"><param name=\"ios-package\" value=\"CDVMFPAnalytics\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"AuthorizationManager\"><param name=\"ios-package\" value=\"CDVAuthorizationManager\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"AuthenticationContext\"><param name=\"ios-package\" value=\"CDVAuthenticationContext\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"MFPPushPlugin\"><param name=\"ios-package\" value=\"CDVMFPPush\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-livereload": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "ibm-mfp-core": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "ibm-mfp-push": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/ibm-mfp-core/www/BMSClient.js",
+            "id": "ibm-mfp-core.BMSClient",
+            "pluginId": "ibm-mfp-core",
+            "clobbers": [
+                "BMSClient"
+            ]
+        },
+        {
+            "file": "plugins/ibm-mfp-core/www/MFPRequest.js",
+            "id": "ibm-mfp-core.MFPRequest",
+            "pluginId": "ibm-mfp-core",
+            "clobbers": [
+                "MFPRequest"
+            ]
+        },
+        {
+            "file": "plugins/ibm-mfp-core/www/MFPLogger.js",
+            "id": "ibm-mfp-core.MFPLogger",
+            "pluginId": "ibm-mfp-core",
+            "clobbers": [
+                "MFPLogger"
+            ]
+        },
+        {
+            "file": "plugins/ibm-mfp-core/www/MFPAnalytics.js",
+            "id": "ibm-mfp-core.MFPAnalytics",
+            "pluginId": "ibm-mfp-core",
+            "clobbers": [
+                "MFPAnalytics"
+            ]
+        },
+        {
+            "file": "plugins/ibm-mfp-core/www/AuthorizationManager.js",
+            "id": "ibm-mfp-core.AuthorizationManager",
+            "pluginId": "ibm-mfp-core",
+            "clobbers": [
+                "AuthorizationManager"
+            ]
+        },
+        {
+            "file": "plugins/ibm-mfp-push/www/MFPPush.js",
+            "id": "ibm-mfp-push.MFPPush",
+            "pluginId": "ibm-mfp-push",
+            "clobbers": [
+                "MFPPush"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-livereload": "1.0.0-dev",
+        "cordova-plugin-whitelist": "1.2.0",
+        "ibm-mfp-core": "0.0.1",
+        "ibm-mfp-push": "0.0.1"
+    }
+}

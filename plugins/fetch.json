@@ -1,0 +1,47 @@
+{
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist@1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "ibm-mfp-core": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-core",
+            "subdir": ".",
+            "ref": "development"
+        },
+        "is_top_level": false,
+        "variables": {}
+    },
+    "com.ququplay.websocket.WebSocket": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mkuklis/phonegap-websocket",
+            "subdir": "."
+        },
+        "is_top_level": false,
+        "variables": {}
+    },
+    "cordova-plugin-livereload": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-livereload"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "ibm-mfp-push": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-push.git",
+            "subdir": ".",
+            "ref": "development"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

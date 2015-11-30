@@ -1,0 +1,17 @@
+1. Create your mobile backend in Bluemix.
+
+	a. In the Boilerplates section of the Bluemix catalog, click MobileFirst Services Starter.
+
+	b. Enter a name and host for your app and click Create.
+
+	c. Click Finish.
+
+---------------------
+
+2. Get the project from GitHub. From your computer, open the terminal and enter the following command: git clone https://github.com/ibm-bluemix-mobile-services/bms-samples-cordova-helloworld
+
+---------------------
+
+3. Follow the README instructions here to add the cordova plugin and configure your development environment: https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-core/
+
+*** Project will not build until you follow these steps!!!

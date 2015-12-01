@@ -54,8 +54,7 @@ module.exports.metadata =
 {
     "cordova-plugin-livereload": "1.0.0-dev",
     "ibm-mfp-core": "0.0.1",
-    "ibm-mfp-push": "1.0.0",
-    "cordova-plugin-whitelist": "1.2.0"
+    "ibm-mfp-push": "1.0.0"
 }
 // BOTTOM OF METADATA
 });

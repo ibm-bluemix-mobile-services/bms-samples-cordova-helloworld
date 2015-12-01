@@ -49,8 +49,8 @@
 		D10C03229EB843D9888FEC15 /* CDVAuthenticationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D951108C1FC4368B4663082 /* CDVAuthenticationContext.swift */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		E4B8A96D16894DB698A847F3 /* IMFCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D07A0CCA1DB44BBFA0ECE45F /* IMFCore.framework */; };
-		7BE59286AB2645AE9510A95D /* CDVMFPPush.swift in Resources */ = {isa = PBXBuildFile; fileRef = 4201A769F44E4041A23D02DE /* CDVMFPPush.swift */; };
-		9540ECC1B1D34006A09EBB10 /* IMFPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54B04C652AE4F3BA7F34B84 /* IMFPush.framework */; };
+		D94D5273B931454DA8468AEA /* CDVMFPPush.swift in Resources */ = {isa = PBXBuildFile; fileRef = 148037595BA24A36B7F69AE5 /* CDVMFPPush.swift */; };
+		774CD870336248F18B9A02E9 /* IMFPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2F077AA40C04BE18C950354 /* IMFPush.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,8 +126,8 @@
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "bms-samples-cordova-helloworld/config.xml"; sourceTree = "<group>"; };
 		FA60065DF8014ECD9C3514A6 /* IMFClient+initializeException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "IMFClient+initializeException.m"; path = "ibm-mfp-core/IMFClient+initializeException.m"; sourceTree = "<group>"; };
 		FB74174970F04A4A93AE3B94 /* CDVMFPLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = unknown; name = CDVMFPLogger.swift; path = "ibm-mfp-core/CDVMFPLogger.swift"; sourceTree = "<group>"; };
-		4201A769F44E4041A23D02DE /* CDVMFPPush.swift */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "CDVMFPPush.swift"; path = "ibm-mfp-push/CDVMFPPush.swift"; sourceTree = "<group>"; fileEncoding = 4; };
-		B54B04C652AE4F3BA7F34B84 /* IMFPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "IMFPush.framework"; path = "bms-samples-cordova-helloworld/Plugins/ibm-mfp-push/IMFPush.framework"; sourceTree = "<group>"; };
+		148037595BA24A36B7F69AE5 /* CDVMFPPush.swift */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "CDVMFPPush.swift"; path = "ibm-mfp-push/CDVMFPPush.swift"; sourceTree = "<group>"; fileEncoding = 4; };
+		F2F077AA40C04BE18C950354 /* IMFPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "IMFPush.framework"; path = "bms-samples-cordova-helloworld/Plugins/ibm-mfp-push/IMFPush.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +140,7 @@
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
 				E4B8A96D16894DB698A847F3 /* IMFCore.framework in Frameworks */,
-				9540ECC1B1D34006A09EBB10 /* IMFPush.framework in Frameworks */,
+				774CD870336248F18B9A02E9 /* IMFPush.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +214,7 @@
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
 				D07A0CCA1DB44BBFA0ECE45F /* IMFCore.framework */,
-				B54B04C652AE4F3BA7F34B84 /* IMFPush.framework */,
+				F2F077AA40C04BE18C950354 /* IMFPush.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -241,7 +241,7 @@
 				198C13248D9C45E48440E2CF /* Utils.swift */,
 				10890BAFB55D4404846486CD /* Bridging-Header.h */,
 				91761BBEF5C74B64A0715FDB /* IMFClient+initializeException.h */,
-				4201A769F44E4041A23D02DE /* CDVMFPPush.swift */,
+				148037595BA24A36B7F69AE5 /* CDVMFPPush.swift */,
 			);
 			name = Plugins;
 			path = "bms-samples-cordova-helloworld/Plugins";
@@ -437,7 +437,7 @@
 				12D8AD978952431B9AA79D3D /* CustomErrorTypes.swift in Sources */,
 				976F29DC52964FF8BAB02CE6 /* Utils.swift in Sources */,
 				05577D7C487D4CF7A374C160 /* CDVMFPPush.swift in Sources */,
-				7BE59286AB2645AE9510A95D /* CDVMFPPush.swift in Resources */,
+				D94D5273B931454DA8468AEA /* CDVMFPPush.swift in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +461,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"bms-samples-cordova-helloworld/Plugins/ibm-mfp-core\"",
+					"\"bms-samples-cordova-helloworld/Plugins/ibm-mfp-push\"",
+					"\"bms-samples-cordova-helloworld/Plugins/ibm-mfp-push\"",
+					"\"bms-samples-cordova-helloworld/Plugins/ibm-mfp-push\"",
+					"\"bms-samples-cordova-helloworld/Plugins/ibm-mfp-push\"",
 					"\"bms-samples-cordova-helloworld/Plugins/ibm-mfp-push\"",
 					"\"bms-samples-cordova-helloworld/Plugins/ibm-mfp-push\"",
 					"\"bms-samples-cordova-helloworld/Plugins/ibm-mfp-push\"",
@@ -502,6 +506,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"bms-samples-cordova-helloworld/Plugins/ibm-mfp-core\"",
+					"\"bms-samples-cordova-helloworld/Plugins/ibm-mfp-push\"",
+					"\"bms-samples-cordova-helloworld/Plugins/ibm-mfp-push\"",
+					"\"bms-samples-cordova-helloworld/Plugins/ibm-mfp-push\"",
+					"\"bms-samples-cordova-helloworld/Plugins/ibm-mfp-push\"",
 					"\"bms-samples-cordova-helloworld/Plugins/ibm-mfp-push\"",
 					"\"bms-samples-cordova-helloworld/Plugins/ibm-mfp-push\"",
 					"\"bms-samples-cordova-helloworld/Plugins/ibm-mfp-push\"",

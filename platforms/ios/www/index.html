@@ -32,20 +32,30 @@
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <title>Hello World</title>
     </head>
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <button onclick="bluemix.initialize()">Initialize BMSClient</button>
-            <button onclick="bluemix.ping()">PING BLUEMIX</button>
+        <div class="text-response">
+            <h1 id="text-big">Yay!</h1>
+            <p id="text-connected">You are not connected!</p>
+            <p id="text-details"></p>
+        </div>
+        <div class="app container">
+            <button id="btn-ping" class="btn btn-lg" onclick="app.ping()">PING BLUEMIX</button>
+            <!--
             <div id="deviceready" class="blink">
                 <p>Whoa!</p>
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
             </div>
+            -->
         </div>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
     </body>

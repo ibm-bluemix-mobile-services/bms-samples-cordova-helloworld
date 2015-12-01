@@ -22,7 +22,10 @@
     <feature name="MFPPushPlugin">
         <param name="android-package" value="com.ibm.mobilefirstplatform.clientsdk.cordovaplugins.push.CDVMFPPush" />
     </feature>
-    <allow-navigation href="*" />
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
     <preference name="android-minSdkVersion" value="15" />
     <allow-intent href="market:*" />
     <name>bms-samples-cordova-helloworld</name>

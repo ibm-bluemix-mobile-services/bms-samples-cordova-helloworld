@@ -48,4 +48,30 @@ var app = {
     }
 };
 
+var bluemix =  {
+    // Bluemix credentials
+    route: "https://HelloMatt.mybluemix.net",//"<insert route>"
+    guid: "36fe7be8-5eda-42c0-bf2c-19ced26a3278",//"<insert GUID>"
+    timeout: 20000,
+
+    // Initialize BMSClient
+    initialize: function() {
+        BMSClient.initialize(this.route + "/protected", this.guid);
+    },
+    // Ping Bluemix
+    ping: function() {
+        var request = new MFPRequest(this.route, MFPRequest.GET, this.timeout);
+
+        var success = function(successResponse) {
+          alert("Request success!\n\nStatus: " + successResponse.responseText);
+        };
+
+        var failure = function(failureResponse) {
+          alert("Request failure!\n\nStatus: " + JSON.stringify(failureResponse));
+        };
+
+        request.send(success, failure);
+    }
+};
+
 app.initialize();

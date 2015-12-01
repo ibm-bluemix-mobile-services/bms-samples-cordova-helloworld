@@ -1,14 +1,4 @@
 {
-    "ibm-mfp-core": {
-        "source": {
-            "type": "git",
-            "url": "https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-core",
-            "subdir": ".",
-            "ref": "development"
-        },
-        "is_top_level": false,
-        "variables": {}
-    },
     "com.ququplay.websocket.WebSocket": {
         "source": {
             "type": "git",
@@ -26,22 +16,29 @@
         "is_top_level": true,
         "variables": {}
     },
-    "ibm-mfp-push": {
-        "source": {
-            "type": "git",
-            "url": "https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-push.git",
-            "subdir": ".",
-            "ref": "development"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "cordova-plugin-whitelist": {
         "source": {
             "type": "registry",
             "id": "cordova-plugin-whitelist@1"
         },
         "is_top_level": true,
+        "variables": {}
+    },
+    "ibm-mfp-push": {
+        "source": {
+            "type": "registry",
+            "id": "ibm-mfp-push"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "ibm-mfp-core": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-core",
+            "subdir": "."
+        },
+        "is_top_level": false,
         "variables": {}
     }
 }

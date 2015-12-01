@@ -24,8 +24,25 @@ var app =  {
 
     // Initialize BMSClient
     initialize: function() {
-        BMSClient.initialize(this.route, this.guid);
+        this.bindEvents();
     },
+
+    // Bind Event Listeners
+    //
+    // Bind any events that are required on startup. Common events are:
+    // 'load', 'deviceready', 'offline', and 'online'.
+    bindEvents: function() {
+        document.addEventListener('deviceready', this.onDeviceReady, false);
+    },
+
+    // deviceready Event Handler
+    //
+    // The scope of 'this' is the event. In order to use the 'route' and 'guid'
+    // variables, we must explicitly call 'app.route' and 'app.guid'
+    onDeviceReady: function() {
+        BMSClient.initialize(app.route, app.guid);
+    },
+
     // Ping Bluemix
     ping: function() {
         var request = new MFPRequest("/protected", MFPRequest.GET);
@@ -37,6 +54,7 @@ var app =  {
         var success = function(successResponse) {
             header.style.display = "block";
             connected.innerHTML = "You are connected!";
+            details.innerHTML = "<h4>Response:</h4><i>" + successResponse.responseText + "</i>";
             //alert("Request success!\n\nStatus: " + successResponse.responseText);
         };
 
@@ -44,7 +62,7 @@ var app =  {
             header.style.display = "block";
             header.innerHTML = "Bummer";
             connected.innerHTML = "Something Went Wrong";
-            details.innerHTML = JSON.stringify(failureResponse.errorDescription);
+            details.innerHTML = "<h4>Response:</h4><i>" + failureResponse.errorDescription + "</i>";
             //alert("Request failure!\n\nStatus: " + JSON.stringify(failureResponse));
         };
 

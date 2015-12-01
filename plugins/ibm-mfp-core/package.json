@@ -1,9 +1,9 @@
 {
-  "name": "ibm-mfp-push",
+  "name": "ibm-mfp-core",
   "version": "1.0.0",
-  "description": "Cordova Plugin for the IBM Bluemix Mobile Services Push SDK",
+  "description": "Cordova Plugin for IBM Bluemix Mobile Services Core SDK",
   "cordova": {
-    "id": "ibm-mfp-push",
+    "id": "ibm-mfp-core",
     "platforms": [
       "android",
       "ios"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-push.git"
+    "url": "git+https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-core.git"
   },
   "keywords": [
     "ecosystem:cordova",
@@ -20,10 +20,11 @@
   ],
   "author": "IBM Bluemix Mobile Services",
   "license": "Apache version 2.0",
+  "readmeFilename": "README.md",
   "bugs": {
-    "url": "https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-push/issues"
+    "url": "https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-core/issues"
   },
-  "homepage": "https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-push#readme",
+  "homepage": "https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-core#readme",
   "contributors" : [
     {
       "name" : "Larry Nickerson",
@@ -35,7 +36,7 @@
     },
     {
       "name" : " Matthew Parangot",
-      "email" : "mparang@us.ibm.com"
+      "email" : ""
     }
   ]
 }

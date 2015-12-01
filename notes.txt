@@ -15,3 +15,7 @@
 3. Follow the README instructions here to add the cordova plugin and configure your development environment: https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-core/
 
 *** Project will not build until you follow these steps!!!
+
+---------------------
+
+4. In the "index.js" file, replace the <APPLICATION_ROUTE> and <APPLICATION_GUID> with values obtained from Mobile Options.

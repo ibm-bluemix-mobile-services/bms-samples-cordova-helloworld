@@ -1,6 +1,12 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
+        "file": "plugins/cordova-plugin-whitelist/whitelist.js",
+        "id": "cordova-plugin-whitelist.whitelist",
+        "pluginId": "cordova-plugin-whitelist",
+        "runs": true
+    },
+    {
         "file": "plugins/ibm-mfp-core/www/BMSClient.js",
         "id": "ibm-mfp-core.BMSClient",
         "pluginId": "ibm-mfp-core",
@@ -47,21 +53,15 @@ module.exports = [
         "clobbers": [
             "MFPPush"
         ]
-    },
-    {
-        "file": "plugins/cordova-plugin-whitelist/whitelist.js",
-        "id": "cordova-plugin-whitelist.whitelist",
-        "pluginId": "cordova-plugin-whitelist",
-        "runs": true
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
     "cordova-plugin-livereload": "1.0.0-dev",
-    "ibm-mfp-core": "0.0.1",
-    "ibm-mfp-push": "1.0.0",
-    "cordova-plugin-whitelist": "1.2.0"
+    "cordova-plugin-whitelist": "1.2.0",
+    "ibm-mfp-core": "1.0.0",
+    "ibm-mfp-push": "1.0.0"
 }
 // BOTTOM OF METADATA
 });

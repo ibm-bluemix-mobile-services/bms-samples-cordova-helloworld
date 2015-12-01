@@ -11,10 +11,11 @@ all_droid_run:
 list:
 	cordova plugin list
 add:
-	make add-git
+	make add-remote
 	#make add-local
-add-git:
-	cordova plugin add "https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-push.git#development"
+add-remote:
+	cordova plugin add ibm-mfp-push
+	#cordova plugin add "https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-push.git#development"
 	#cordova plugin add ../mfppush-development/mfppush-plugin/tests
 add-local:
 	cordova plugin add ../mfpcore-development/mfpcore-plugin
@@ -23,7 +24,7 @@ add-local:
 clean:
 	cordova plugin remove ibm-mfp-push
 	#cordova plugin remove ibm-mfp-push-tests
-	#cordova plugin remove ibm-mfp-core
+	cordova plugin remove ibm-mfp-core
 pf_ios:
 	cordova platform add ios
 pf_droid:

@@ -96,8 +96,6 @@ ext {
 }
 
 // PLUGIN GRADLE EXTENSIONS START
-apply from: "ibm-mfp-core/hellocordova-build-extras.gradle"
-apply from: "ibm-mfp-push/hellocordova-build-extras.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras = file('build-extras.gradle').exists()

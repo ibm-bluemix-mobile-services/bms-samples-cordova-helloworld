@@ -2,7 +2,7 @@
 
 The HelloWorld sample contains a Cordova project that you can use to learn.
 
-<b><i>Note: Read Instructions.txt for detailed instructions on how to build and run the sample.</i></b>
+<b><i>Note: <a href="https://github.com/ibm-bluemix-mobile-services/bms-samples-cordova-helloworld/blob/master/Instructions.txt" target="_blank">Read Instructions.txt</a> for detailed instructions on how to build and run the sample.</i></b>
 
 ### Downloading the sample
 

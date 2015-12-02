@@ -9,6 +9,10 @@
                 "parents": {
                     "/*": [
                         {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
                             "xml": "<feature name=\"BMSClient\"><param name=\"android-package\" value=\"com.ibm.mobilefirstplatform.clientsdk.cordovaplugins.core.CDVBMSClient\" /></feature>",
                             "count": 1
                         },
@@ -30,10 +34,6 @@
                         },
                         {
                             "xml": "<feature name=\"AuthenticationContext\"><param name=\"android-package\" value=\"com.ibm.mobilefirstplatform.clientsdk.cordovaplugins.core.CDVAuthenticationContext\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
                         },
                         {
@@ -107,10 +107,10 @@
         "cordova-plugin-livereload": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         },
-        "ibm-mfp-core": {
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         },
-        "cordova-plugin-whitelist": {
+        "ibm-mfp-core": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         },
         "ibm-mfp-push": {
@@ -119,6 +119,12 @@
     },
     "dependent_plugins": {},
     "modules": [
+        {
+            "file": "plugins/cordova-plugin-whitelist/whitelist.js",
+            "id": "cordova-plugin-whitelist.whitelist",
+            "pluginId": "cordova-plugin-whitelist",
+            "runs": true
+        },
         {
             "file": "plugins/ibm-mfp-core/www/BMSClient.js",
             "id": "ibm-mfp-core.BMSClient",
@@ -160,12 +166,6 @@
             ]
         },
         {
-            "file": "plugins/cordova-plugin-whitelist/whitelist.js",
-            "id": "cordova-plugin-whitelist.whitelist",
-            "pluginId": "cordova-plugin-whitelist",
-            "runs": true
-        },
-        {
             "file": "plugins/ibm-mfp-push/www/MFPPush.js",
             "id": "ibm-mfp-push.MFPPush",
             "pluginId": "ibm-mfp-push",
@@ -176,8 +176,8 @@
     ],
     "plugin_metadata": {
         "cordova-plugin-livereload": "1.0.0-dev",
-        "ibm-mfp-core": "0.0.1",
         "cordova-plugin-whitelist": "1.2.0",
+        "ibm-mfp-core": "1.0.0",
         "ibm-mfp-push": "1.0.0"
     }
 }

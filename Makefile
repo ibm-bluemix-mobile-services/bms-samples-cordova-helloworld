@@ -37,8 +37,9 @@ build_droid:
 	cordova build android
 build_ios:
 	cordova build ios
-build: build_droid build_ios
-	cordova build ios
+build: 
+	make build_droid
+	make build_ios
 run_droid:
 	cordova run android
 run_ios:

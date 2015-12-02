@@ -45,10 +45,10 @@
         "cordova-plugin-livereload": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         },
-        "ibm-mfp-core": {
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         },
-        "cordova-plugin-whitelist": {
+        "ibm-mfp-core": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         },
         "ibm-mfp-push": {
@@ -108,8 +108,8 @@
     ],
     "plugin_metadata": {
         "cordova-plugin-livereload": "1.0.0-dev",
-        "ibm-mfp-core": "0.0.1",
         "cordova-plugin-whitelist": "1.2.0",
+        "ibm-mfp-core": "1.0.0",
         "ibm-mfp-push": "1.0.0"
     }
 }

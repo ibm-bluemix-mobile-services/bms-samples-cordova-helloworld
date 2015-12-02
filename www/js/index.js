@@ -45,7 +45,7 @@ var app =  {
 
     // Ping Bluemix
     ping: function() {
-        var request = new MFPRequest(app.route + "/protected", MFPRequest.GET);
+        var request = new MFPRequest(this.route + "/protected", MFPRequest.GET);
 
         var header = document.getElementById("text-big");
         var connected = document.getElementById("text-connected");
@@ -55,7 +55,7 @@ var app =  {
             header.style.display = "block";
             connected.innerHTML = "You are connected!";
             details.innerHTML = "<h4>Response:</h4><i>" + successResponse.responseText + "</i>";
-            //alert("Request success!\n\nStatus: " + successResponse.responseText);
+            alert("Request success!\n\n" + JSON.stringify(successResponse));
         };
 
         var failure = function(failureResponse) {
@@ -63,7 +63,7 @@ var app =  {
             header.innerHTML = "Bummer";
             connected.innerHTML = "Something Went Wrong";
             details.innerHTML = "<h4>Response:</h4><i>" + failureResponse.errorDescription + "</i>";
-            //alert("Request failure!\n\nStatus: " + JSON.stringify(failureResponse));
+            alert("Request failure!\n\n" + JSON.stringify(failureResponse));
         };
 
         request.send(success, failure);

@@ -13,13 +13,12 @@
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         },
+        "ibm-mfp-core": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
         "ibm-mfp-push": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         }
     },
-    "dependent_plugins": {
-        "ibm-mfp-core": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
-        }
-    }
+    "dependent_plugins": {}
 }

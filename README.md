@@ -1,6 +1,8 @@
 # HelloWorld Cordova application for IBM MobileFirst Services on IBM Bluemix
 
-The HelloWorld samples contains a Cordova project that you can use to learn.
+The HelloWorld sample contains a Cordova project that you can use to learn.
+
+<b>Read the Instructions.txt file for detailed instructions on how to build and run the sample.</b>
 
 ### Downloading the sample
 

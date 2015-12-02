@@ -19,8 +19,8 @@
 
 var app =  {
     // Bluemix credentials
-    route: "https://HelloMatt.mybluemix.net",//"<APPLICATION_ROUTE>"
-    guid: "36fe7be8-5eda-42c0-bf2c-19ced26a3278",//"<APPLICATION_GUID>"
+    route: "<APPLICATION_ROUTE>",
+    guid: "<APPLICATION_GUID>",
 
     // Initialize BMSClient
     initialize: function() {

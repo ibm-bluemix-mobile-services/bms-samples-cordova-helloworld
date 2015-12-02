@@ -2,7 +2,7 @@
 
 The HelloWorld samples contains a Cordova project that you can use to learn.
 
-### Downloading the samples
+### Downloading the sample
 
 Clone the samples from Github with the following command:
 	

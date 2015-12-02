@@ -11,7 +11,7 @@ Clone the samples with the following command:
 ### Configure the front end in the HelloWorld sample
 
 1. Navigate to the directory where the project was cloned.
-2. Open 'index.js' located at [your-directory]/www/js/index.js
+2. Open <b>index.js</b> located at [your-directory]/www/js/index.js
 3. Replace the \<APPLICATION_ROUTE\> and \<APPLICATION_GUID\> with your Bluemix application ID and route.
 
 Javascript:
@@ -26,7 +26,7 @@ Javascript:
 
 Now you can run your iOS application in your mobile emulator or on your device.
 
-You will see a single view application with a "PING BLUEMIX" button. When you click this button the application will test the connection from the client to the backend Bluemix application. The application uses the ApplicationRoute specified in index.js in order to test the connection. The application will then display if the connection was successful or unsuccessful. In the unsuccessful state an error will be displayed in the Xcode/Android log, as well as in the application.
+You will see a single view application with a "PING BLUEMIX" button. When you click this button the application will test the connection from the client to the backend Bluemix application. The application uses the ApplicationRoute specified in <b>index.js</b> in order to test the connection. The application will then display if the connection was successful or unsuccessful. In the unsuccessful state an error will be displayed in the Xcode/Android log, as well as in the application.
 
 <i>Note: A GET request is made to a protected resource on the Node.js runtime on Bluemix. This code has been provided in the MobileFirst Services Starter boilerplate. If the backend application was not created using the MobileFirst Services Starter boilerplate the application will not be able to connect successfully.</i>
 

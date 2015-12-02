@@ -5,8 +5,8 @@ The HelloWorld samples contains a Cordova project that you can use to learn.
 ### Downloading the samples
 
 Clone the samples from Github with the following command:
-
-  git clone https://github.com/ibm-bluemix-mobile-services/bms-samples-cordova-helloworld
+	
+	git clone https://github.com/ibm-bluemix-mobile-services/bms-samples-cordova-helloworld
   
 ### Configure the front end in the HelloWorld sample
 
@@ -16,7 +16,7 @@ Clone the samples from Github with the following command:
 
 Javascript:
 
-  // Bluemix credentials
+	// Bluemix credentials
 	route: "\<APPLICATION_ROUTE\>",
 	guid: "\<APPLICATION_GUID\>",
 

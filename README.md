@@ -2,7 +2,7 @@
 
 The HelloWorld sample contains a Cordova project that you can use to learn.
 
-<b>Read the Instructions.txt file for detailed instructions on how to build and run the sample.</b>
+<b><i>Read Instructions.txt for detailed instructions on how to build and run the sample.</i></b>
 
 ### Downloading the sample
 

@@ -17,7 +17,7 @@ Clone the samples from Github with the following command:
 Javascript:
 
 	// Bluemix credentials
-	route: "\<APPLICATION_ROUTE\>",
-	guid: "\<APPLICATION_GUID\>",
+	route: "<APPLICATION_ROUTE>",
+	guid: "<APPLICATION_GUID>",
 
 !!! Don't forget comma after the string !!!

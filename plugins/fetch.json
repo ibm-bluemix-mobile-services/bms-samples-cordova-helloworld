@@ -24,14 +24,6 @@
         "is_top_level": true,
         "variables": {}
     },
-    "ibm-mfp-push": {
-        "source": {
-            "type": "registry",
-            "id": "ibm-mfp-push"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "ibm-mfp-core": {
         "source": {
             "type": "git",
@@ -39,6 +31,14 @@
             "subdir": "."
         },
         "is_top_level": false,
+        "variables": {}
+    },
+    "ibm-mfp-push": {
+        "source": {
+            "type": "registry",
+            "id": "ibm-mfp-push"
+        },
+        "is_top_level": true,
         "variables": {}
     }
 }

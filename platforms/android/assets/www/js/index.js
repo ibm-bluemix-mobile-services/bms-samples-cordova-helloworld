@@ -45,7 +45,7 @@ var app =  {
 
     // Ping Bluemix
     ping: function() {
-        var request = new MFPRequest("/protected", MFPRequest.GET);
+        var request = new MFPRequest(app.route + "/protected", MFPRequest.GET);
 
         var header = document.getElementById("text-big");
         var connected = document.getElementById("text-connected");

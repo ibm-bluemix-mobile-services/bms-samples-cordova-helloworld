@@ -53,9 +53,10 @@ var app =  {
 
         var success = function(successResponse) {
             header.style.display = "block";
+            header.innerHTML = "Yay!";
             connected.innerHTML = "You are connected!";
             details.innerHTML = "<h4>Response:</h4><i>" + successResponse.responseText + "</i>";
-            alert("Request success!\n\n" + JSON.stringify(successResponse));
+            //alert("Request success!\n\n" + JSON.stringify(successResponse));
         };
 
         var failure = function(failureResponse) {
@@ -63,7 +64,7 @@ var app =  {
             header.innerHTML = "Bummer";
             connected.innerHTML = "Something Went Wrong";
             details.innerHTML = "<h4>Response:</h4><i>" + failureResponse.errorDescription + "</i>";
-            alert("Request failure!\n\n" + JSON.stringify(failureResponse));
+            //alert("Request failure!\n\n" + JSON.stringify(failureResponse));
         };
 
         request.send(success, failure);

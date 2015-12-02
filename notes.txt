@@ -58,7 +58,7 @@
 
 Check the following items:
 
-	Verify that you correctly pasted the route and GUID values:
+	- Verify that you correctly pasted the route and GUID values:
 
 	Javascript:
 
@@ -66,7 +66,9 @@ Check the following items:
 	    route: "https://hellotest.mybluemix.net",
 	    guid: "9d48d73a-0878-4254-test-bdcbe6c79c31",
 
-    You can also check the Xcode or Android debug log for more information.
+    - Check the Xcode or Android debug log for more information.
+
+    - Check the status of your App in the Bluemix 
 
 
 

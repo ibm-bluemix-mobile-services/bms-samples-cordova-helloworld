@@ -20,4 +20,16 @@ Javascript:
 	route: "<APPLICATION_ROUTE>",
 	guid: "<APPLICATION_GUID>",
 
-<b>Don't forget comma after the string!</b>
+<b>Don't forget commas at the end of each line!</b>
+
+### Run the Cordova App
+
+Now you can run your iOS application in your mobile emulator or on your device.
+
+You will see a single view application with a "PING BLUEMIX" button. When you click this button the application will test the connection from the client to the backend Bluemix application. The application uses the ApplicationRoute specified in index.js in order to test the connection. The application will then display if the connection was successful or unsuccessful. In the unsuccessful state an error will be displayed in the Xcode/Android log, as well as in the application.
+
+<i>Note: A GET request is made to a protected resource on the Node.js runtime on Bluemix. This code has been provided in the MobileFirst Services Starter boilerplate. If the backend application was not created using the MobileFirst Services Starter boilerplate the application will not be able to connect successfully.</i>
+
+### License
+
+This package contains sample code provided in source code form. The samples are licensed under the under the Apache License, Version 2.0 (the "License"). You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 and may also view the license in the license.txt file within this package. Also see the notices.txt file within this package for additional notices.

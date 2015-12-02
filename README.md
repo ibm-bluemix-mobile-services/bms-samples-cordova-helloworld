@@ -1,4 +1,4 @@
-# HelloWorld application for IBM MobileFirst Services on IBM Bluemix
+# HelloWorld Cordova application for IBM MobileFirst Services on IBM Bluemix
 
 The HelloWorld samples contains a Cordova project that you can use to learn.
 

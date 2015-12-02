@@ -1,1 +1,1 @@
-# bms-samples-cordova-helloworld
+# HelloWorld application for IBM MobileFirst Services on IBM Bluemix

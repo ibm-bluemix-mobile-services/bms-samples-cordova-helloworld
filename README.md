@@ -20,7 +20,7 @@ Javascript:
 	route: "<APPLICATION_ROUTE>",
 	guid: "<APPLICATION_GUID>",
 
-<b>Don't forget commas at the end of each line!</b>
+<i>Note: Don't forget commas at the end of each line!</i>
 
 ### Run the Cordova App
 

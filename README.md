@@ -10,7 +10,7 @@ Clone the samples with the following command:
   
 ### Configure the front end in the HelloWorld sample
 
-1. Navigate to the bms-samples-cordova-helloworld directory where the project was cloned.
+1. Navigate to the directory where the project was cloned.
 2. Open 'index.js' located at [your-directory]/www/js/index.js
 3. Replace the \<APPLICATION_ROUTE\> and \<APPLICATION_GUID\> with your Bluemix application ID and route.
 

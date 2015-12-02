@@ -12,12 +12,12 @@ Clone the samples from Github with the following command:
 
 1. Navigate to the bms-samples-cordova-helloworld directory where the project was cloned.
 2. Open 'index.js' located at [your-directory]/www/js/index.js
-3. Replace the "<APPLICATION_ROUTE>" and "<APPLICATION_GUID>" with your Bluemix application ID and route.
+3. Replace the \<APPLICATION_ROUTE\> and \<APPLICATION_GUID\> with your Bluemix application ID and route.
 
 Javascript:
 
   // Bluemix credentials
-	route: "<APPLICATION_ROUTE>",
-	guid: "<APPLICATION_GUID>",
+	route: "\<APPLICATION_ROUTE\>",
+	guid: "\<APPLICATION_GUID\>",
 
 !!! Don't forget comma after the string !!!

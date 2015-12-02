@@ -20,4 +20,4 @@ Javascript:
 	route: "<APPLICATION_ROUTE>",
 	guid: "<APPLICATION_GUID>",
 
-!!! Don't forget comma after the string !!!
+<b>Don't forget comma after the string!</b>

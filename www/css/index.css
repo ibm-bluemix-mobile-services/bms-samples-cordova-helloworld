@@ -22,13 +22,18 @@
 
 body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
-    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    /*-webkit-text-size-adjust: none;              prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
     background-color: rgb(29,39,48);
     height:100%;
     margin:0px;
     padding:0px;
     width:100%;
+    font-size: 16px;
+}
+
+p {
+    font-size: 120%;
 }
 
 /* Portrait layout (default) */

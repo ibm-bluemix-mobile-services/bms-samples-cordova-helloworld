@@ -2,13 +2,28 @@
 
 The HelloWorld sample contains a Cordova project that you can use to learn.
 
-<b><i>Note: Read <a href="https://github.com/ibm-bluemix-mobile-services/bms-samples-cordova-helloworld/blob/master/Instructions.txt" target="_blank">Instructions.txt</a> for detailed instructions on how to build and run the sample.</i></b>
+### Create your mobile backend in Bluemix
+
+1. In the Boilerplates section of the Bluemix catalog, click MobileFirst Services Starter.
+2. Enter a name and host for your app and click Create.
+3. Click Finish. 
 
 ### Downloading the sample
 
 Clone the samples with the following command:
 	
 	git clone https://github.com/ibm-bluemix-mobile-services/bms-samples-cordova-helloworld
+	
+### Add the native platforms to your app
+
+	cordova platform add ios
+	cordova platform add android
+	
+### Configure Cordova
+
+Follow the README instructions for "Installation" and "Configuration" here to add the cordova plugin and configure your development environment: <https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-core/#installation>
+
+***Note: Project will not build until you follow instructions from this step***
   
 ### Configure the front end in the HelloWorld sample
 
@@ -17,20 +32,40 @@ Clone the samples with the following command:
 3. Replace the \<APPLICATION_ROUTE\> and \<APPLICATION_GUID\> with your Bluemix application ID and route.
 
 Javascript:
-
+	
 	// Bluemix credentials
 	route: "<APPLICATION_ROUTE>",
-	guid: "<APPLICATION_GUID>",
+	guid: "<APPLICATION_GUID>",	
 
-<i>Note: Don't forget commas at the end of each line!</i>
+***Note: Don't forget commas at the end of each line!***
 
-### Run the Cordova App
+### Build/Run the Cordova App
 
 Now you can run your iOS application in your mobile emulator or on your device.
 
-You will see a single view application with a "PING BLUEMIX" button. When you click this button the application will test the connection from the client to the backend Bluemix application. The application uses the ApplicationRoute specified in <b>index.js</b> in order to test the connection. The application will then display if the connection was successful or unsuccessful. In the unsuccessful state an error will be displayed in the Xcode/Android log, as well as in the application.
+1. Build the Cordova app. From your terminal enter the following command:
 
-<i>Note: A GET request is made to a protected resource on the Node.js runtime on Bluemix. This code has been provided in the MobileFirst Services Starter boilerplate. If the backend application was not created using the MobileFirst Services Starter boilerplate the application will not be able to connect successfully.</i>
+		cordova build ios
+		cordova build android
+
+2. Run the sample app. From your terminal enter the following command:
+
+		cordova run ios
+		cordova run android		
+
+
+
+You will see a single view application with a "PING BLUEMIX" button. When you click this button the application will test the connection from the client to the backend Bluemix application. The application uses the ApplicationRoute specified in **index.js** in order to test the connection. The application will then display if the connection was successful or unsuccessful. In the unsuccessful state an error will be displayed in the Xcode/Android log, as well as in the application.
+
+***Note: A GET request is made to a protected resource on the Node.js runtime on Bluemix. This code has been provided in the MobileFirst Services Starter boilerplate. If the backend application was not created using the MobileFirst Services Starter boilerplate the application will not be able to connect successfully.***
+
+### Resolve any problems
+
+Check the following items:
+
+- Verify that you correctly pasted the route and GUID values.
+- Check the Xcode or Android debug log for more information.
+- Check the status of your App in Bluemix.
 
 ### License
 

@@ -41,7 +41,7 @@ Javascript:
 
 ### Build/Run the Cordova App
 
-Now you can run your iOS application in your mobile emulator or on your device.
+Now you can run your application in your mobile emulator or on your device.
 
 1. Build the Cordova app. From your terminal enter the following command:
 

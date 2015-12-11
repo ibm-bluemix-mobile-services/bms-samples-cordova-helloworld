@@ -16,6 +16,8 @@ Clone the samples with the following command:
 	
 ### Add the native platforms to your app
 
+Navigate into your project directory and run the following commands:
+
 	cordova platform add ios
 	cordova platform add android
 	

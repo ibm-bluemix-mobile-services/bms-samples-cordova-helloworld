@@ -2,7 +2,7 @@
 <widget id="io.cordova.hellocordova" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>bms-samples-cordova-helloworld</name>
     <description>
-        A sample Apache Cordova application that uses Bluemix Push Notifications.
+        A sample Apache Cordova application that connects to Bluemix.
     </description>
     <author>IBM</author>
     <content src="index.html" />

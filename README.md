@@ -27,7 +27,7 @@ Add the plugin:
 
 ### Configure Cordova
 
-Follow the README instructions for "Configuration" here to configure your development environment: <https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-core/#configuration>
+Follow the README instructions for "Configuration" [here](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-core/#configuration) to configure your development environment: <https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-core/#configuration>
 
 ***Note: Project will not build until you follow instructions from this step***
   

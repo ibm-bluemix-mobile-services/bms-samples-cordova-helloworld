@@ -30,7 +30,7 @@ Follow the README instructions for "Installation" and "Configuration" here to ad
 1. Navigate to the directory where the project was cloned.
 2. Open <b>index.js</b> located at [your-directory]/www/js/index.js
 3. Replace the \<APPLICATION_ROUTE\> and \<APPLICATION_GUID\> with your Bluemix application ID and route.
-4. Make sure your route is using 'https'
+4. Make sure your route is using **https**
 
 Javascript:
 	

@@ -19,15 +19,6 @@
 -->
 <html>
     <head>
-        <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
         <meta http-equiv="Content-Security-Policy">
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
@@ -41,12 +32,12 @@
         <title>Hello World</title>
     </head>
     <body>
-        <div class="text-response">
-            <h1 id="text-big"></h1>
-            <p id="text-connected">You are not connected!</p>
-            <p id="text-details"></p>
-        </div>
-        <div class="app container">
+        <div class="container">
+            <div class="text-response">
+                <h1 id="text-big"></h1>
+                <p id="text-connected">You are not connected!</p>
+                <p id="text-details"></p>
+            </div>
             <button id="btn-ping" class="btn btn-lg" onclick="app.ping()">PING BLUEMIX</button>
         </div>
         <script type="text/javascript" src="cordova.js"></script>

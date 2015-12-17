@@ -12,18 +12,24 @@ The HelloWorld sample contains a Cordova project that you can use to learn.
 
 Clone the samples with the following command:
 	
-	git clone https://github.com/ibm-bluemix-mobile-services/bms-samples-cordova-helloworld
+```Bash
+git clone https://github.com/ibm-bluemix-mobile-services/bms-samples-cordova-helloworld
+```
 	
 ### Add the native platforms to your app
 
 Navigate into your project directory and run the following commands:
 
-	cordova platform add ios
-	cordova platform add android
+```Bash
+cordova platform add ios
+cordova platform add android
+```
 	
 Add the plugin:
 
-	cordova plugin add ibm-mfp-core
+```Bash
+cordova plugin add ibm-mfp-core
+```
 
 ### Configure Cordova
 
@@ -39,10 +45,12 @@ Follow the README instructions for [Configuration](https://github.com/ibm-bluemi
 4. Make sure your route is using **https**
 
 Javascript:
-	
-	// Bluemix credentials
-	route: "<APPLICATION_ROUTE>",
-	guid: "<APPLICATION_GUID>",	
+
+```Javascript	
+// Bluemix credentials
+route: "<APPLICATION_ROUTE>",
+guid: "<APPLICATION_GUID>",
+```
 
 ***Note: Don't forget commas at the end of each line!***
 
@@ -52,15 +60,17 @@ Now you can run your application in your mobile emulator or on your device.
 
 1. Build the Cordova app. From your terminal enter the following command:
 
-		cordova build ios
-		cordova build android
+	```Bash
+	cordova build ios
+	cordova build android
+	```
 
 2. Run the sample app. From your terminal enter the following command:
 
-		cordova run ios
-		cordova run android		
-
-
+	```Bash
+	cordova run ios
+	cordova run android		
+	```
 
 You will see a single view application with a "PING BLUEMIX" button. When you click this button the application will test the connection from the client to the backend Bluemix application. The application uses the ApplicationRoute specified in **index.js** in order to test the connection. The application will then display if the connection was successful or unsuccessful. In the unsuccessful state an error will be displayed in the Xcode/Android log, as well as in the application.
 

@@ -44,6 +44,9 @@ var app =  {
     },
 
     // Ping Bluemix
+    //
+    // Sends a request to the Bluemix backend
+    // The success and failure variables handle the callback response for each case 
     ping: function() {
         var request = new MFPRequest(this.route + "/protected", MFPRequest.GET);
 
@@ -56,7 +59,6 @@ var app =  {
             header.innerHTML = "Yay!";
             connected.innerHTML = "You are connected!";
             details.innerHTML = "<h4>Response:</h4><i>" + successResponse.responseText + "</i>";
-            //alert("Request success!\n\n" + JSON.stringify(successResponse));
         };
 
         var failure = function(failureResponse) {
@@ -64,7 +66,6 @@ var app =  {
             header.innerHTML = "Bummer";
             connected.innerHTML = "Something Went Wrong";
             details.innerHTML = "<h4>Response:</h4><i>" + failureResponse.errorDescription + "</i>";
-            //alert("Request failure!\n\n" + JSON.stringify(failureResponse));
         };
 
         request.send(success, failure);

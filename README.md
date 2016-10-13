@@ -28,7 +28,7 @@ cordova platform add android
 Add the plugin:
 
 ```Bash
-cordova plugin add ibm-mfp-core
+cordova plugin add bms-core
 ```
 
 ### Configure Cordova

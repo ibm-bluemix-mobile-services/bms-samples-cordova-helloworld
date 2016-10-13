@@ -14,13 +14,13 @@ add:
 	make add-remote
 	#make add-local
 add-remote:
-	cordova plugin add ibm-mfp-core
+	cordova plugin add bms-core
 	#cordova plugin add ibm-mfp-push
 add-local:
 
 clean:
 	#cordova plugin remove ibm-mfp-push
-	cordova plugin remove ibm-mfp-core
+	cordova plugin remove bms-core
 pf_ios:
 	cordova platform add ios
 pf_droid:

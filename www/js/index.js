@@ -20,8 +20,8 @@
 var app =  {
     // Bluemix credentials
     //
-    // * Create a MobileFirst Services starter service instance and copy the route e.g. "myhostname.mybluemix.net" (no slash at the end)
-    // * Set the region: BMSClient.REGION_US_SOUTH, BMSClient.REGION_UK, or BMSClient.REGION_SYDNEY
+    // Create a MobileFirst Services starter service instance and copy the route e.g. "myhostname.mybluemix.net"
+    // Set the region: BMSClient.REGION_US_SOUTH, BMSClient.REGION_UK, or BMSClient.REGION_SYDNEY
     route: "APPLICATION_ROUTE",
     region: BMSClient.REGION_US_SOUTH,
 

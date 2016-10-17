@@ -19,8 +19,11 @@
 
 var app =  {
     // Bluemix credentials
-    route: "<APPLICATION_ROUTE>",
-    guid: "<APPLICATION_GUID>",
+    //
+    // * Create a MobileFirst Services starter service instance and copy the route e.g. "myhostname.mybluemix.net" (no slash at the end)
+    // * Set the region: BMSClient.REGION_US_SOUTH, BMSClient.REGION_UK, or BMSClient.REGION_SYDNEY
+    route: "APPLICATION_ROUTE",
+    region: BMSClient.REGION_US_SOUTH,
 
     // Initialize BMSClient
     initialize: function() {
@@ -40,15 +43,15 @@ var app =  {
     // The scope of 'this' is the event. In order to use the 'route' and 'guid'
     // variables, we must explicitly call 'app.route' and 'app.guid'
     onDeviceReady: function() {
-        BMSClient.initialize(app.route, app.guid);
+        BMSClient.initialize(region);
     },
 
     // Ping Bluemix
     //
     // Sends a request to the Bluemix backend
-    // The success and failure variables handle the callback response for each case 
+    // The success and failure variables handle the callback response for each case
     ping: function() {
-        var request = new MFPRequest(this.route + "/protected", MFPRequest.GET);
+        var request = new BMSRequest(this.route + "/protected", BMSRequest.GET);
 
         var header = document.getElementById("text-big");
         var connected = document.getElementById("text-connected");

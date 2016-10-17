@@ -33,7 +33,7 @@ cordova plugin add bms-core
 
 ### Configure Cordova
 
-Follow the README instructions for [Configuration](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-core/#configuration) to configure your development environment.
+Follow the README instructions for [Configuration](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-core) to configure your development environment.
 
 ***Note: Project will not build until you follow instructions from this step***
 
@@ -50,9 +50,16 @@ JavaScript:
 // Bluemix credentials
 //
 // Create a MobileFirst Services starter service instance and copy the route e.g. "myhostname.mybluemix.net"
-// Set the region: BMSClient.REGION_US_SOUTH, BMSClient.REGION_UK, or BMSClient.REGION_SYDNEY
 route: "APPLICATION_ROUTE",
-region: BMSClient.REGION_US_SOUTH,
+```
+
+```Javascript
+// deviceready Event Handler
+//
+// Set the region: BMSClient.REGION_US_SOUTH, BMSClient.REGION_UK, or BMSClient.REGION_SYDNEY
+onDeviceReady: function() {
+		BMSClient.initialize(BMSClient.REGION_US_SOUTH);
+},
 ```
 ***Note: Don't forget commas at the end of each line!***
 

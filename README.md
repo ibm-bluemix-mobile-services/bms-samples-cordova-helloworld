@@ -41,8 +41,8 @@ Follow the README instructions for [Configuration](https://github.com/ibm-bluemi
 
 1. Navigate to the directory where the project was cloned.
 2. Open <b>index.js</b> located at [your-directory]/www/js/index.js
-3. Replace the "APPLICATION_ROUTE" and set your region.
-4. Make sure your route is using **https**
+3. Replace the `"APPLICATION_ROUTE"` and set your region.
+4. Make sure your route is using **https**.
 
 JavaScript:
 
@@ -90,7 +90,7 @@ You will see a single view application with a "PING BLUEMIX" button. When you cl
 Check the following items:
 
 - Verify that you correctly pasted the route value without the slash at the end.
-- Double check the [README](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-core) of the core plugin to ensure your development environment is working.
+- Double check the [README](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-core) of the core plugin to ensure your development environment is set up correctly.
 - Check the Xcode or Android debug log for more information.
 - Check the status of your App in Bluemix.
 

@@ -61,7 +61,7 @@ onDeviceReady: function() {
 		BMSClient.initialize(BMSClient.REGION_US_SOUTH);
 },
 ```
-***Note: Don't forget commas at the end of each line!***
+> **Note:** Don't forget commas at the end of each line!
 
 ### Build/Run the Cordova App
 
@@ -80,13 +80,17 @@ Now you can run your application in your mobile emulator or on your device.
 
 You will see a single view application with a "PING BLUEMIX" button. When you click this button the application will test the connection from the client to the backend Bluemix application. The application uses the ApplicationRoute specified in **index.js** in order to test the connection. The application will then display if the connection was successful or unsuccessful. In the unsuccessful state an error will be displayed in the Xcode/Android log, as well as in the application.
 
-***Note: A GET request is made to a protected resource on the Node.js runtime on Bluemix. This code has been provided in the MobileFirst Services Starter boilerplate. If the backend application was not created using the MobileFirst Services Starter boilerplate the application will not be able to connect successfully.***
+
+> **Note:** Double check the [README instructions](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-core) in the core plugin if you run into issues building and running the application.
+
+> A GET request is made to a protected resource on the Node.js runtime on Bluemix. This code has been provided in the MobileFirst Services Starter boilerplate. If the backend application was not created using the MobileFirst Services Starter boilerplate the application will not be able to connect successfully.
 
 ### Resolve any problems
 
 Check the following items:
 
 - Verify that you correctly pasted the route value without the slash at the end.
+- Double check the [README](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-core) of the core plugin to ensure your development environment is working.
 - Check the Xcode or Android debug log for more information.
 - Check the status of your App in Bluemix.
 

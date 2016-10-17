@@ -43,7 +43,7 @@ var app =  {
     // The scope of 'this' is the event. In order to use the 'route' and 'guid'
     // variables, we must explicitly call 'app.route' and 'app.guid'
     onDeviceReady: function() {
-        BMSClient.initialize(region);
+        BMSClient.initialize(this.region);
     },
 
     // Ping Bluemix

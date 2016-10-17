@@ -35,7 +35,7 @@ cordova plugin add bms-core
 
 Follow the README instructions for [Configuration](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-core) to configure your development environment.
 
-***Note: Project will not build until you follow instructions from this step***
+> **Note:** Project will not build until you follow instructions from this step.
 
 ### Configure the front end in the HelloWorld sample
 

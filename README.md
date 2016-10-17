@@ -50,9 +50,16 @@ JavaScript:
 // Bluemix credentials
 //
 // Create a MobileFirst Services starter service instance and copy the route e.g. "myhostname.mybluemix.net"
-// Set the region: BMSClient.REGION_US_SOUTH, BMSClient.REGION_UK, or BMSClient.REGION_SYDNEY
 route: "APPLICATION_ROUTE",
-region: BMSClient.REGION_US_SOUTH,
+```
+
+```Javascript
+// deviceready Event Handler
+//
+// Set the region: BMSClient.REGION_US_SOUTH, BMSClient.REGION_UK, or BMSClient.REGION_SYDNEY
+onDeviceReady: function() {
+		BMSClient.initialize(BMSClient.REGION_US_SOUTH);
+},
 ```
 ***Note: Don't forget commas at the end of each line!***
 

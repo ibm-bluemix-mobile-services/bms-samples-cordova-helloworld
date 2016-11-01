@@ -21,7 +21,7 @@ var app =  {
     // Bluemix credentials
     //
     // Create a MobileFirst Services starter service instance and copy the route e.g. "https://myhostname.mybluemix.net"
-    route: "https://fergalicisfss.mybluemix.net",
+    route: "SERVER_URL",
 
     // Initialize BMSClient
     initialize: function() {

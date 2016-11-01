@@ -20,8 +20,8 @@
 var app =  {
     // Bluemix credentials
     //
-    // Create a MobileFirst Services starter service instance and copy the route e.g. "myhostname.mybluemix.net"
-    route: "APPLICATION_ROUTE",
+    // Create a MobileFirst Services starter service instance and copy the route e.g. "https://myhostname.mybluemix.net"
+    route: "SERVER_URL",
 
     // Initialize BMSClient
     initialize: function() {
@@ -48,7 +48,7 @@ var app =  {
     // Sends a request to the Bluemix backend
     // The success and failure variables handle the callback response for each case
     ping: function() {
-        var request = new BMSRequest(this.route + "/protected", BMSRequest.GET);
+        var request = new BMSRequest(this.route, BMSRequest.GET);
 
         var header = document.getElementById("text-big");
         var connected = document.getElementById("text-connected");
@@ -58,7 +58,6 @@ var app =  {
             header.style.display = "block";
             header.innerHTML = "Yay!";
             connected.innerHTML = "You are connected!";
-            details.innerHTML = "<h4>Response:</h4><i>" + successResponse.responseText + "</i>";
         };
 
         var failure = function(failureResponse) {

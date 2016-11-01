@@ -76,7 +76,7 @@ Now you can run your application in your mobile emulator or on your device.
 
 2. Run the sample app from Android Studio or Xcode after making the native changes.
 
-You will see a single view application with a "PING BLUEMIX" button. When you click this button the application will test the connection from the client to the backend Bluemix application. The application uses the `SERVER_URL` specified in **index.js** in order to test the connection. The application will then display if the connection was successful or unsuccessful. In the unsuccessful state an error will be displayed in the Xcode/Android log, as well as in the application.
+You will see a single view application with a **PING BLUEMIX** button. When you click this button the application will test the connection from the client to the backend Bluemix application. The application uses the `"SERVER_URL"` specified in **index.js** in order to test the connection. The application will then display if the connection was successful or unsuccessful. In the unsuccessful state an error will be displayed in the Xcode/Android log, as well as in the application.
 
 
 > **Note:** Double check the [README instructions](https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-cordova-plugin-core) in the core plugin if you run into issues building and running the application.
